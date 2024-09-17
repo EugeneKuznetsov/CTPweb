@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: #e7ac53;
+    width: 1440px;
+}
+h1{
+    margin: 0;
+    margin-left: 50px;
+}
+h2{  
+    margin-left: 25px;
+}
+h4{
+    margin-left: 20px;
+}
+p{
+    margin-left: 10px;
+}
+.images img{
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 30%;
+}
+div.images{
+ display: flex;
+ justify-content: space-evenly;   
+}
+.images1{
+    width: 300px;
+    max-width: 300px;
+}
+td{
+    width: 45%;
+}
+table{
+    margin-left: 10px;
+}

@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #e7ac53;
+}
+
+.container{
+    width: 1440px;
+    background-color: #d19c4c;
+
+}
+h1{
+    margin: 0;
+    margin-left: 50px;
+}
+h2{  
+    margin-left: 25px;
+}
+h4{
+    margin-left: 20px;
+}
+p{
+    margin-left: 10px;
+}
+.images img{
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 30%;
+    aspect-ratio: 16 / 9;
+}
+div.images{
+ display: flex;
+ justify-content: space-evenly;   
+}
+
+td{
+    width: 45%;
+}
+table{
+    margin-left: 10px;
+}
+
+
+
+
+
+#descr1{
+    font-family: "1";
+    text-align: left;
+}
+#descr2{
+    font-family: "2";
+    text-align: center;
+}
+#descr3{
+    font-family: "3";
+    text-align: end;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type:  none;
+}
+#font1{
+    font-weight: bold;
+}
+tr:nth-child(2){
+    font-weight: bold;
+}
+@font-face {
+    font-family: "1";
+    src: url(fonts/1.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "2";
+    src: url(fonts/2.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "3";
+    src: url(fonts/3.otf);
+    font-style: normal;
+    font-weight: normal;
+}
