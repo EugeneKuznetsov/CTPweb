@@ -1,0 +1,117 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.vibrating-button {
+  display: inline-block;
+  margin: 50px;
+  font-size: 20px;
+  background-color: red;
+  padding: 10px 20px;
+  cursor: pointer;
+  animation: vibrate 0.1s infinite;
+  text-align: center;
+}
+
+.vibrating-button:hover {
+  animation: none;
+  background-color: green;
+}
+
+@keyframes vibrate {
+  0% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  100% { transform: translateX(-2px); }
+}
+
+.animated-link {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+.animated-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: green;
+  bottom: -2px;
+  left: 50%;
+  transition: width 0.3s, left 0.3s;
+}
+
+.animated-link:hover {
+  color: green;
+}
+
+.animated-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(81, 157, 224);
+  border-radius: 50%;
+  position: absolute;
+  top: 30vh; /* Начало падения на 30% ниже от верха окна */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hidden-checkbox:checked ~ .ball {
+  animation: bounce 3s ease-in forwards;
+}
+
+@keyframes bounce {
+  0% { top: 30vh; height: 50px; }
+  5% { top: 87vh; height: 50px; }
+  10% { top: 90vh; height: 30px; }
+
+  15% { top: 45vh; height: 50px; }
+  20% { top: 87vh; height: 50px; }
+  25% { top: 90vh; height: 35px; }
+
+  30% { top: 60vh; height: 50px; }
+  35% { top: 87vh; height: 50px; }
+  40% { top: 90vh; height: 40px; }
+
+  45% { top: 70vh; height: 50px; }
+  50% { top: 87vh; height: 50px; }
+  55% { top: 90vh; height: 43px; }
+
+  60% { top: 75vh; height: 50px; }
+  65% { top: 87vh; height: 50px; }
+  70% { top: 90vh; height: 45px; }
+  
+  75% { top: 80vh; height: 50px; }
+  80% { top: 87vh; height: 50px; }
+  85% { top: 89vh; height: 47px; }
+
+  90% { top: 85vh; height: 50px; }
+  95% { top: 87vh; height: 50px; }
+  100% { top: 88vh; height: 50px; }
+}

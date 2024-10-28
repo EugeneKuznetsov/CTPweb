@@ -1,0 +1,82 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cont1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 10px 0;
+}
+
+.cont2{
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 10px 10px;
+}
+
+article {
+  padding: 10px;
+  background: rgba(16, 233, 215, 0.178);
+  flex: 1 1 calc(33.33% - 30px);
+  order: 10;
+}
+
+.flex-group-1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: calc(33%);
+  gap: 10px;
+  order: 2;
+}
+
+.flex-group-2 article{
+  flex: 1 1 calc(50% - 30px);
+}
+
+.flex-group-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: calc(66.4%);
+  gap: 10px;
+}
+
+.item-6{
+  order: 1;
+}
+
+.item-5{
+  order: 2;
+}
+
+.item-4{
+  order: 3;
+}
